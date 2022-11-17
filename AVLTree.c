@@ -31,7 +31,7 @@ int get_balance(Node *this) {
 }
 
 int is_balanced(Node *this) {
-	return (abs(get_balance(this)) >= 1) ? 1 : 0;
+	return (abs(get_balance(this)) <= 1) ? 1 : 0;
 }
 
 Node *next_in_order(Node *this) {
